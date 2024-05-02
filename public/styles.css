@@ -1,0 +1,225 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    background-color: rgb(179, 106, 23);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+h1, header {
+    margin: -10px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.snake {
+    background-color:rgb(51, 183, 33);
+    border-radius: 40%;
+    border: 3px solid greenyellow;
+}
+
+.food {
+    background-color: rgb(226, 86, 58);
+    border: 3px solid rgb(229, 171, 159);
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.active-difficulty {
+    border-color: green;
+}
+
+#leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Game-Outer-Border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.Flex-Container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0px; 
+}
+
+.Game-Middle-Border {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #414141;
+    border-top: 15px solid black;
+    border-left: 15px solid black;
+    border-right: 15px solid black;
+    border-radius: 10px 10px 0px 0px;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    font-size: 1.25em;
+    text-shadow: 1px 1px black;
+}
+
+.Game-Bottom-Border {
+    width: 400px;
+    border-right: 15px solid black;
+    border-left: 15px solid black;
+    border-bottom: 15px solid black;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #414141;
+}
+
+.Score {
+    display: flex;
+    margin-left: 25px;
+    background-color: #414141;
+}
+
+.High-Score {
+    display: flex;
+    margin-right: 25px;
+    background-color: #414141;
+}
+
+.Scores {
+    color: greenyellow;
+    text-shadow: 1px 1px rgb(51, 183, 33);
+}
+
+.difficulties {
+    margin-top: 5px;
+}
+
+.Game-Inner-Border {
+    border: 10px solid black;
+    background-color: black;
+}
+
+#Game-Board {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+    background-color: rgb(102, 66, 59);
+}
+
+form {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px;
+}
+
+header {
+    padding: 30px;
+}
+
+section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-shadow: .1px .1px 1.8px whitesmoke, -.1px -.1px 1.8px whitesmoke, -.1px .1px 1.8px whitesmoke, .1px -.1px 1.8px whitesmoke;
+}
+
+a:active {
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: auto;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+table, th, td {
+    border:1px solid white;
+    background-color: rgb(48, 46, 46);
+    margin: auto;
+}
+
+td {
+    padding: 20px;
+}
+
+button {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 15px;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 1px 1px 3px whitesmoke, -1px -1px 3px whitesmoke, -1px 1px 3px whitesmoke, 1px -1px 3px whitesmoke;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px black;
+    border: 1px solid rgb(99, 94, 94);
+    color: grey;
+}
+
+@media only screen and (max-width: 800px) { 
+    #guidedata {
+        width: 80%
+    }
+}
+
+@media only screen and (min-width: 801px) { 
+    #guidedata {
+        width: 60%
+    }
+}
+
+input {
+    border: .5px solid black;
+}
+
+input:hover {
+    box-shadow: 1px 1px 3px whitesmoke, -1px -1px 3px whitesmoke, -1px 1px 3px whitesmoke, 1px -1px 3px whitesmoke;
+}
+
+#top {
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    padding: 3px;
+}
+
+.active {
+    border: 1px solid green;
+}

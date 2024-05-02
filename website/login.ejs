@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/header.ejs") %>
+    <form action="/login-user" method="POST">
+        <p>Login:</p>
+        <p>
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" id="username" name="username" required>
+            <br>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <br>
+            <input type="text" id="password" name="password" required>
+            <br>
+        </p>
+        <button>Submit</button>
+        <br>
+        <%= failed %>
+    </form>
+    <hr/>
+    <form action="/add-user" method="POST">
+        <p>Sign Up:</p>
+        <p>
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" id="username" name="username" required>
+            <br>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <br>
+            <input type="text" id="password" name="password" required>
+            <br>
+        </p>
+        <button>Submit</button>
+        <br>
+        <%= failed2 %>
+    </form>
+    <script type="text/javascript" src="loggedIn.js"></script>
+</body>
+</html>

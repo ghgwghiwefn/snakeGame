@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/header.ejs") %>
+    <nav>
+        <section id="Game-Section">
+            <div class="Game-Outer-Border">
+                <div class="Flex-Container">
+                    <div class="Game-Middle-Border">
+                       <div class="Score">
+                        Score:&nbsp;&nbsp;&nbsp;<span id="score" class="Scores">0</span>
+                       </div>
+                       <div class="High-Score">
+                        High Score:&nbsp;&nbsp;&nbsp;<span id="high-score" class="Scores">0</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="Flex-Container">
+                    <div class="Game-Inner-Border">
+                        <div id="Game-Board">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="Flex-Container">
+                    <div class="Game-Bottom-Border">
+                        <button onclick="toggleDifficulty('easy')" class="difficulties" id="easy">
+                            Easy
+                        </button>&nbsp;
+                        <button onclick="toggleDifficulty('medium')" class="difficulties active" id="medium">
+                            Medium
+                        </button>&nbsp;
+                        <button onclick="toggleDifficulty('hard')" class="difficulties" id="hard">
+                            Hard
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="leaderboard-section">
+            <hr />
+            <table>
+                <div class="leaderboard">
+                    <tr>
+                        <td>High Scores</td>
+                        <td>Easy</td>
+                        <td>Medium</td>
+                        <td>Hard</td>
+                    </tr>
+                    <tr>
+                        <td>1st</td>
+                        <td id="e0">0</td>
+                        <td id="m0">0</td>
+                        <td id="h0">0</td>
+                    </tr>
+                    <tr>
+                        <td>2nd</td>
+                        <td id="e1">0</td>
+                        <td id="m1">0</td>
+                        <td id="h1">0</td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td id="e2">0</td>
+                        <td id="m2">0</td>
+                        <td id="h2">0</td>
+                    </tr>
+                </div>
+            </table>
+        </section>
+    </nav>
+    <script type="text/javascript" src="loggedIn.js"></script>
+    <script type="text/javascript" src="snakeGame.js"></script>
+</body>
+</html>
