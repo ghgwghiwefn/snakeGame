@@ -44,8 +44,8 @@ app.use(session({
 const port = 3000;
 
 //connecting to database
-const DBlogin = 'mongodb+srv://derek:greubjkfrfd10@cluster0.bzbtemx.mongodb.net/user-data?retryWrites=true&w=majority';
-//const DBlogin = 'mongodb+srv://derek:greubjkfrfd10@cluster0.bzbtemx.mongodb.net/'
+const DBlogin = '';
+//const DBlogin = ''
 mongoose.connect(DBlogin, {useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err));
